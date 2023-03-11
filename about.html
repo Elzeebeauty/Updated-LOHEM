@@ -5,284 +5,217 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap css -->
-
-    <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
-    rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"
-    />
-
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"
-        ></script>
+    <title>LOHEM</title>
 
     <!-- Favicon -->
-
     <link rel="shortcut icon" href="images/favicon.png">
     <title>Light On the Hill Evangelical Mission</title>
 
-    <!-- google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
 
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/23048b58fb.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <!-- Header-->
     <header>
-        <nav>
-            <div class="nav__container navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="images/lohem logo.jpeg" alt="image"></a>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo/logo2.jpeg" alt="logo"
+                            width="100px"></a>
                 </div>
-                <ul class="nav__menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Courses</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="sponsor.html">sponsorship</a></li>
-                        </ul>
-                        <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
-                        <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!--End of Navbar-->
-    <br />
-    <br />
-    <br />
-    <br />
-    
-    <div class="container">
-        <h2 class="text-center mt-5">ABOUT LOHEM</h2>
-        <div class="row mb-5">
-            <div class="col-sm-6">
-                <br />
-                <br />
-                <img src="images/5.jpg" alt="image" class="picture img-fluid rounded d-none d-sm-block p-2 mb-4"
-                width="600px">
-            </div>
-            <div class="col-sm-6">
-                <br />
-                <br />
-                <h2 class="mb-3 about-bg text-center"> 👋 Hello, I am </h2>
-                <h1 class="about-pg text-center">
-                    Evang. Dr Joy Agbazue
-                </h1>
-                <h4 class="about-pg text-center">
-                    LOHEM is an acronym of Light on the Hill Evangelical Mission and was based on the LOHEM scriptural verse: Matthew 5:14,
-                    “You are the light of the world.
-                    
-                    THANKS
-                </h4>
-                <div class="navigation-links mb-5">
-                    <div>
-                        <a href="./about.html" class="btn btn-primary mt-3 important-link justify-content-center d-block" title="More about LOHEM">LEARN MORE</a>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="banner" style="background-image: url('images/slider/1.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated bounceInRight" style="animation-delay: 1s">Light On The Hill
+                            <span>Evangelical Mission</span>
+                        </h2>
+                        <h3 class="animated bounceInLeft" style="animation-delay: 2s"> Welcomes You </h3>
+                        <p class="animated bounceInRight" style="animation-delay: 3s"><a href="about.html">Learn
+                                More</a></p>
                     </div>
                 </div>
+                <div class="item">
+                    <div class="banner" style="background-image: url('images/slider/2.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated slideInDown" style="animation-delay: 1s">We Are <span>LOHEM</span></h2>
+                        <h3 class="animated fadeInUp" style="animation-delay: 2s">An Evangelical Ministry</h3>
+                        <p class="animated zoomIn" style="animation-delay: 3s"><a href="about.html">Learn More</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner" style="background-image: url('images/news/1.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated zoomIn" style="animation-delay: 1s"> Light On The Hill <span>Evangelical
+                                Mission</span></h2>
+                        <h3 class="animated fadeInLeft" style="animation-delay: 2s">We Love You</h3>
+                        <p class="animated zoomIn" style="animation-delay: 3s"><a href="about.html">Learn More</a></p>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
 
-    </div>
-    <!--- Courses --->
-    <h2 class="text-center"> WHO ARE WE</h2>
-    <section class="courses mt-3">
-        <div class="container courses__container">
-            <article class="course">
-                <div class="course__image">
-                    <img src="./images/lohem-imageslider2.jpg" alt="image">
+    </header>
+
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="container">
+                <h1 class="main-heading d-inline-block text-uppercase pb-3 border-bottom">ABOUT US</h1>
+            </div>
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="mb-5 mb-sm-4 col-md-4">
+                        <img src="images/5.jpg" alt="image" width="400px">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about__text mb-5 mb-sm-4 mb-md-4">
+                            <h3>LOHEM's BACKGROUND</h3>
+                            <p class="m-0">With God’s mandate, LOHEM was founded by the President, Evang. Dr. Joy
+                                Agbazue, on 29th September 2000.</strong>
+                                LOHEM is a non-profit making, international, interdenominational Ministry
+                                charged with preaching
+                                the Gospel to win souls for Christ and impressing the converts with teachings on
+                                righteousness that
+                                are focused on
+                                gaining eternity in Heaven. In her involvement with global evangelization and
+                                mission, LOHEM fulfils
+                                her mandate by
+                                Networking with Pastors, Churches and Mission Agencies. with teachings on
+                                righteousness that are
+                                focused on gaining
+                                eternity in Heaven. In her involvement with global evangelization and mission, LOHEM
+                                fulfils her
+                                mandate by Networking
+                                with Pastors, Churches and Mission Agencies.</p>
+                        </div>
+                        <a href="functions.html" class="btn btn-primary mb-4">LEARN MORE</a>
+                    </div>
+                    <div class="container">
+                        <div class="about__skills">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="m-0">OUR VISION</h4>
+                                    <p class="m-0">1. Creating a holistic awareness of God's kingdom and
+                                        populating it.
+                                        <br />
+                                        2. Carrying out mission power-packed outreach crusades in towns and
+                                        villages.
+                                        <br />
+                                        3. Showing life of righteousness and hence presenting exemplary
+                                        behavior that imitates Christ.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="m-0">OUR MISSION</h4>
+                        <p class="m-0">A. To recruit, train and sponsor Missionaries who will
+                            preach the Word and finally effect their
+                            environment and the
+                            whole world with the Gospel.
+                            <br />
+                            B. To make genuine converts, disciple them to live in the light of
+                            the Word and finally hand them
+                            over to Bible
+                            believing, practicing Churches around.
+                            <br />
+                            C. To network with Pastors and Ministers of the Gospel and influence
+                            them to live by the Word that
+                            will effect their
+                            congregation.
+                        </p>
+                    </div>
                 </div>
-                <div class="course__info">
-                    <h4>OUR MISSION</h4>
-                    <p>A. To recruit, train and sponsor Missionaries who will preach the Word and finally effect their
-                        environment and the
-                        whole world with the Gospel.
-                        <br />
-                        B. To make genuine converts, disciple them to live in the light of the Word and finally hand them
-                        over to Bible
-                        believing, practicing Churches around.
-                        <br />
-                        C. To network with Pastors and Ministers of the Gospel and influence them to live by the Word that
-                        will effect their
-                        congregation.
-                    </p>
-                    <a href="courses.html" class="btn btn-primary">Learn More</a>
-                </div>
-            </article>
-    
-            <article class="course">
-                <div class="course__image">
-                    <img src="./images/lohem-imageslider2.jpg" alt="image">
-                </div>
-                <div class="course__info">
-                    <h4>OUR BACKGROUND</h4>
-                    <p>With God’s mandate, LOHEM was founded by the President, Evang. Dr. Joy Agbazue,
-    
-                        on 29th September 2000. LOHEM is a non-profit making, international, interdenominational Ministry
-                        charged with preaching
-                        the Gospel to win souls for Christ and impressing the converts with teachings on righteousness that
-                        are focused on
-                        gaining eternity in Heaven. In her involvement with global evangelization and mission, LOHEM fulfils
-                        her mandate by
-                        Networking with Pastors, Churches and Mission Agencies. with teachings on righteousness that are
-                        focused on gaining
-                        eternity in Heaven. In her involvement with global evangelization and mission, LOHEM fulfils her
-                        mandate by Networking
-                        with Pastors, Churches and Mission Agencies.
-                    </p>
-                    <a href="courses.html" class="btn btn-primary">Learn More</a>
-                </div>
-            </article>
-    
-            <article class="course">
-                <div class="course__image">
-                    <img src="./images/lohem-imageslider2.jpg" alt="image">
-                </div>
-                <div class="course__info">
-                    <h4>YOUR INVOLVEMENT</h4>
-                    <p>
-                        Any Christian can be actively involved in this task of populating Heaven through LOHEM Ministry.
+                <div class="col-6">
+                    <h4 class="m-0">YOUR INVOLVEMENT</h4>
+                    <p class="m-0">Any Christian can be actively involved in this task of
+                        populating Heaven through LOHEM Ministry.
                         God’s abundant
-                        blessings await you here on earth and in eternity as you do so in many ways listed below:
+                        blessings await you here on earth and in eternity as you do so in
+                        many ways listed below:
                         <br />
                         1. Praying and interceding for LOHEM.
                         <br />
-                        2. Encouraging us through phone calls, letters, E-mails and visitations at our Enugu Office.
+                        2. Encouraging us through phone calls, letters, E-mails and
+                        visitations at our Enugu Office.
                         <br />
-                        3.By your financial help: we need people to sponsor our projects. Eg. The Radio and Television
+                        3.By your financial help: we need people to sponsor our projects.
+                        Eg. The Radio and Television
                         messages as well as
-                        crusades/outreaches are very capital intensive and through your sponsorship they can be sustained
+                        crusades/outreaches are very capital intensive and through your
+                        sponsorship they can be sustained
                         and gain wider
                         coverage.
                         <br />
-                        4. We are mobilizing Christians who will join us in Personal Evangelism. You can join us today.
+                        4. We are mobilizing Christians who will join us in Personal
+                        Evangelism. You can join us today.
                         <br />
-                        5. You can donate Bibles, Christian literature, clothes fairly used dresses and materials, home
+                        5. You can donate Bibles, Christian literature, clothes fairly used
+                        dresses and materials, home
                         property for our
                         donation to the underprivileged in the villages.
                     </p>
-                    <a href="courses.html" class="btn btn-primary">Learn More</a>
                 </div>
-            </article>
+            </div>
         </div>
-    </section>
-    <!--- End of Courses --->
-
-    <!---- testimonials ---->
-    <section class="container testimonials__container mySwiper">
-        <h2>Student's Testimonials</h2>
-        <div swiper-wrapper>
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="./images/5.jpg">
-                </div>
-                <div class="testimonial__info">
-                    <h5>Emmanuella Doe</h5>
-                    <small>Student</small>
-                </div>
-                <div class="testimonial__body">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus aspernatur neque
-                        architecto saepe voluptas?
-                    </p>
-                </div>
-            </article>
-    
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="./images/5.jpg">
-                </div>
-                <div class="testimonial__info">
-                    <h5>Emmanuella Doe</h5>
-                    <small>Student</small>
-                </div>
-                <div class="testimonial__body">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus aspernatur neque
-                        architecto saepe voluptas?
-                    </p>
-                </div>
-            </article>
-    
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="./images/5.jpg">
-                </div>
-                <div class="testimonial__info">
-                    <h5>Emmanuella Doe</h5>
-                    <small>Student</small>
-                </div>
-                <div class="testimonial__body">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus aspernatur neque
-                        architecto saepe voluptas?
-                    </p>
-                </div>
-            </article>
-    
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="./images/5.jpg">
-                </div>
-                <div class="testimonial__info">
-                    <h5>Emmanuella Doe</h5>
-                    <small>Student</small>
-                </div>
-                <div class="testimonial__body">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus aspernatur neque
-                        architecto saepe voluptas?
-                    </p>
-                </div>
-            </article>
-    
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="./images/5.jpg">
-                </div>
-                <div class="testimonial__info">
-                    <h5>Emmanuella Doe</h5>
-                    <small>Student</small>
-                </div>
-                <div class="testimonial__body">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus aspernatur neque
-                        architecto saepe voluptas?
-                    </p>
-                </div>
-            </article>
-    
-            <article class="testimonial swiper-slide">
-                <div class="avatar">
-                    <img src="./images/5.jpg">
-                </div>
-                <div class="testimonial__info">
-                    <h5>Emmanuella Doe</h5>
-                    <small>Student</small>
-                </div>
-                <div class="testimonial__body">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio doloribus aspernatur neque
-                        architecto saepe voluptas?
-                    </p>
-                </div>
-            </article>
-        </div>
-        <div class="swiper-pagination"></div>
-    </section>
-    <!---- End of testimonials ---->
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
 
     <!---- footer ---->
     <footer>
@@ -292,23 +225,24 @@
                     <h4>LOHEM</h4>
                 </a>
                 <p>
-                    A city that is set on a hill cannot be hid.” Thus, this name was revealed by God to the President and
+                    A city that is set on a hill cannot be hid.” Thus, this name was revealed by God to the President
+                    and
                     implies that
                     members of LOHEM and indeed .
                 </p>
             </div>
-    
+
             <div class="footer__2">
                 <h4>Permalinks</h4>
                 <ul class="permalinks">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="sponsor.html">Sponsorship</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer__3">
                 <h4>Privacy</h4>
                 <ul class="privacy">
@@ -317,7 +251,7 @@
                     <li><a href="#">Refund Policy</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer__4">
                 <h4>Contact Us</h4>
                 <div>
@@ -327,7 +261,7 @@
                     </p>
                     <p>agbazuejoy@gmail.com</p>
                 </div>
-    
+
                 <ul class="footer__socials">
                     <li><a href="#"><i class="fa-brand fa-instagram"></i></a></li>
                     <li><a href="#"><i class="fa-brand fa-twitter"></i></a></li>
@@ -341,32 +275,15 @@
         </div>
     </footer>
     <!---- End of footer ---->
-    
-    
-    
-    <script src="https://unpkg.com/swiper07/swiper.bundle.min.js"></script>
-    <script src="./main.js"></script>
-    
-    <!-- Scroll Reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="scrollreveal.min.js"></script>
-    
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerview: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            // when window width is >= 600px
-            breakpoints: {
-                600: {
-                    slidesPerview: 2
-                }
-            }
-        });
-    </script>
-    </body>
-    
-    </html>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

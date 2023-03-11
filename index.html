@@ -1,149 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOHEM</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.png">
     <title>Light On the Hill Evangelical Mission</title>
 
-    <!-- google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap"
         rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/23048b58fb.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.6.2/animate.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="css/style.css">
 </head>
-
-<body onload="slider()">
-    <!-- Header-->
+<body>
     <header>
-        <div class="banner">
-            <div class="slider">
-                <img src="images/slider/2.jpg" id="slideImg" alt="image">
-            </div>
-                <div class="overlay">
-                    <nav>
-                    <div class="nav__container navbar">
-                        <div class="logo">
-                            <a href="index.html"><img src="images/lohem logo.jpeg" alt="image"></a>
-                        </div>
-                        <ul class="nav__menu">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="sponsor.html">sponsorship</a></li>
-                        </ul>
-                        <button id="open-menu-btn"><i class="fa-solid fa-bars"></i></button>
-                        <button id="close-menu-btn"><i class="fa-solid fa-xmark"></i></button>
-                    </div>
-                    </nav>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo/logo2.jpeg" alt="logo" width="100px"></a>
                 </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">portfolio</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    
+    
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+    
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="banner" style="background-image: url('images/slider/1.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated bounceInRight" style="animation-delay: 1s">Light On The Hill <span>Evangelical Mission</span></h2>
+                        <h3 class="animated bounceInLeft" style="animation-delay: 2s"> Welcomes You </h3>
+                        <p class="animated bounceInRight" style="animation-delay: 3s"><a href="about.html">Learn More</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner" style="background-image: url('images/slider/2.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated slideInDown" style="animation-delay: 1s">We Are <span>LOHEM</span></h2>
+                        <h3 class="animated fadeInUp" style="animation-delay: 2s">An Evangelical Ministry</h3>
+                        <p class="animated zoomIn" style="animation-delay: 3s"><a href="about.html">Learn More</a></p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="banner" style="background-image: url('images/news/1.jpg');"></div>
+                    <div class="carousel-caption">
+                        <h2 class="animated zoomIn" style="animation-delay: 1s"> Light On The Hill <span>Evangelical Mission</span></h2>
+                        <h3 class="animated fadeInLeft" style="animation-delay: 2s">We Love You</h3>
+                        <p class="animated zoomIn" style="animation-delay: 3s"><a href="about.html">Learn More</a></p>
+                    </div>
+                </div>
+    
+            </div>
+    
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+    
     </header>
-        <!--End of Navbar-->
-        
-        <!-- Header-->
-        <div class="content">
-            <h3>Welcome to LOHEM</h3>
-            <h1>Light On The Hill Evangelical Mission.<h1>
-                <a href="courses.html" class="btn btn-primary">Get Started</a>
+
+    <!---- footer ---->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h4>LOHEM</h4>
+                </a>
+                <p>
+                    A city that is set on a hill cannot be hid.” Thus, this name was revealed by God to the President and
+                    implies that
+                    members of LOHEM and indeed .
+                </p>
             </div>
-        </header>
-            <!--- End of Header --->
-
-
-            <!---- footer ---->
-            <footer>
-                <div class="container footer__container">
-                    <div class="footer__1">
-                        <a href="index.html" class="footer__logo">
-                            <h4>LOHEM</h4>
-                        </a>
-                        <p>
-                            A city that is set on a hill cannot be hid.” Thus, this name was revealed by God to the President and
-                            implies that
-                            members of LOHEM and indeed .
-                        </p>
-                    </div>
-            
-                    <div class="footer__2">
-                        <h4>Permalinks</h4>
-                        <ul class="permalinks">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="courses.html">Courses</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="sponsor.html">Sponsorship</a></li>
-                        </ul>
-                    </div>
-            
-                    <div class="footer__3">
-                        <h4>Privacy</h4>
-                        <ul class="privacy">
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms and Conditions</a></li>
-                            <li><a href="#">Refund Policy</a></li>
-                        </ul>
-                    </div>
-            
-                    <div class="footer__4">
-                        <h4>Contact Us</h4>
-                        <div>
-                            <p>+2348035909591</p>
-                            <p>
-                                +18624445717
-                            </p>
-                            <p>agbazuejoy@gmail.com</p>
-                        </div>
-            
-                        <ul class="footer__socials">
-                            <li><a href="#"><i class="fa-brand fa-instagram"></i></a></li>
-                            <li><a href="#"><i class="fa-brand fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brand fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa-brand fa-facebook"></i></a></li>
-                        </ul>
-                    </div>
+    
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sponsor.html">Sponsorship</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+2348035909591</p>
+                    <p>
+                        +18624445717
+                    </p>
+                    <p>agbazuejoy@gmail.com</p>
                 </div>
-                <div class="footer__copyright">
-                    <small>Copyright & copy; M3EL Global Ventures</small>
-                </div>
-            </footer>
-            <!---- End of footer ---->
+    
+                <ul class="footer__socials">
+                    <li><a href="#"><i class="fa-brand fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brand fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brand fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brand fa-facebook"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <small>Copyright & copy; M3EL Global Ventures</small>
+        </div>
+    </footer>
+    <!---- End of footer ---->
+    
+    <script src="main.js"></script>
+    </body>
+    
+    </html>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-
-
-            <script src="https://unpkg.com/swiper07/swiper.bundle.min.js"></script>
-            <script src="./main.js"></script>
-
-            <!-- Scroll Reveal -->
-            <script src="https://unpkg.com/scrollreveal"></script>
-            <script src="scrollreveal.min.js"></script>
-
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                    slidesPerview: 1,
-                    spaceBetween: 30,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
-                    // when window width is >= 600px
-                    breakpoints: {
-                        600: {
-                            slidesPerview: 2
-                        }
-                    }
-                });
-            </script>
-</body>
-
-</html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+    </html>
